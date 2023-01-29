@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7168140617150922/2545495020">
+    </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/img" />
+
+    <EditText
+       android:hint="@string/phone"
+       android:layout_width="match_parent"
+       android:layout_marginTop="80dp"
+       android:layout_height="60dp"
+       android:id="@+id/ShowNum"
+       android:background="@drawable/border_sms"
+       android:padding="16dp"/>
+
+    <EditText
+        android:hint="@string/sms"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="40dp"
+        android:id="@+id/SMS"
+        android:background="@drawable/border_sms"
+        android:padding="16dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/SendBtn"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/send"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/back_btn_send"
+        android:layout_marginBottom="40dp"/>
+
+
+
+</LinearLayout>
